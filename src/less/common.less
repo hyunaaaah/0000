@@ -2,6 +2,7 @@
 @main-color: #141E3C;
 
 body {
+  padding-top: @header-height;
   color: @font-color;
 }
 
@@ -61,4 +62,71 @@ header {
   background-color: @font-color;
   text-align: center;
   line-height: 24px;
+}
+
+@footer-height: 60px;
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #575757;
+}
+
+.footer-top {
+  position: relative;
+  height: @footer-height;
+  background-color: @main-color;
+}
+
+.footer-notice {
+  position: absolute;
+  display: inline-block;
+  left: 250px;
+}
+
+.footer-notice > li {
+  display: inline-block;
+  padding: 0px 5px;
+  vertical-align: top;
+  line-height: @footer-height;
+}
+
+.footer-notice li i {
+  line-height: @footer-height;
+}
+
+.footer-notice .fa {
+  font-size: 25px;
+}
+
+.footer-notice > li:nth-child(2) {
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer-info {
+  position: absolute;
+  display: inline-block;
+  right: 250px;
+  line-height: @footer-height;
+}
+
+.footer-info > li {
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-info > li > span {
+  padding-right: 3px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 15px 0px 0px 250px;
 }

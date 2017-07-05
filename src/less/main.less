@@ -1,1 +1,96 @@
 @import 'common.less';
+
+.section-main {
+  //position: relative;
+  height: 350px;
+  padding-top: 20px;
+  background-image: url(../img/market2.jpg);
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+.main-logo {
+  width: 120px;
+  height: 120px;
+  padding-top: 5px;
+  margin-left: 750px;
+  background-color: @font-color;
+  color: @main-color;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 60px;
+  letter-spacing: -2px;
+}
+
+.main-next-img > li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.main-btn-left {
+  position: absolute;
+  left: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: @font-color;
+  color: @main-color;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.main-btn-right {
+  position: absolute;
+  right: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: @font-color;
+  color: @main-color;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@section-sub-height: 230px;
+.section-sub {
+  height: @section-sub-height;
+  width: 100%
+}
+
+.section-sub > ul > li {
+  display: inline-block;
+}
+
+.yeouido-market {
+  width: 27.5%;
+  height: @section-sub-height;
+  background-color: #ff7800;
+}
+
+.ddp-market {
+  width: 15%;
+  height: @section-sub-height;
+  background-color: #c997ff;
+}
+
+.cheonggye-market {
+  width: 15%;
+  height: @section-sub-height;
+  background-color: #AFFF74;
+}
+
+.banpo-market {
+  width: 15%;
+  height: @section-sub-height;
+  background-color: #fff040;
+}
+
+.cheonggye-square-market {
+  width: 27.5%;
+  height: @section-sub-height;
+  background-color: #5fc1c7;
+}
+
