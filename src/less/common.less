@@ -1,4 +1,5 @@
-@font-color: #333;
+@font-color: #ffe42e;
+@main-color: #141E3C;
 
 body {
   color: @font-color;
@@ -8,4 +9,56 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@header-height: 60px;
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: @header-height;
+  width: 100%;
+  background-color: @main-color;
+  text-align: center;
+}
+
+.header-logo {
+  display: inline-block;
+  height: 100%;
+  line-height: @header-height;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: inline-block;
+  margin: 0px 20px 0px 40px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-menu > li  {
+  display: inline-block;
+  padding: 0px 25px;
+}
+
+.header-sns {
+  display: inline-block;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.header-sns > li {
+  display: inline-block;
+  margin: 0px 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  color: @main-color;
+  font-size: 20px;
+  background-color: @font-color;
+  text-align: center;
+  line-height: 24px;
 }
