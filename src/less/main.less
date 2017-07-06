@@ -1,7 +1,7 @@
 @import 'common.less';
 
 .section-main {
-  //position: relative;
+  position: relative;
   height: 350px;
   padding-top: 20px;
   background-image: url(../img/market2.jpg);
@@ -10,17 +10,13 @@
 }
 
 .main-logo {
-  width: 120px;
-  height: 120px;
-  padding-top: 5px;
-  margin-left: 750px;
-  background-color: @font-color;
-  color: @main-color;
-  font-size: 25px;
-  font-weight: bold;
   text-align: center;
-  border-radius: 60px;
-  letter-spacing: -2px;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
 }
 
 .main-next-img > li {
@@ -31,6 +27,7 @@
 .main-btn-left {
   position: absolute;
   left: 100px;
+  top: 150px;
   width: 30px;
   height: 30px;
   border-radius: 30px;
@@ -44,6 +41,7 @@
 .main-btn-right {
   position: absolute;
   right: 100px;
+  top: 150px;
   width: 30px;
   height: 30px;
   border-radius: 30px;
@@ -57,7 +55,9 @@
 @section-sub-height: 230px;
 .section-sub {
   height: @section-sub-height;
-  width: 100%
+  width: 100%;
+  color: @main-color;
+  cursor: pointer;
 }
 
 .section-sub > ul > li {
@@ -65,32 +65,125 @@
 }
 
 .yeouido-market {
-  width: 27.5%;
+  position: relative;
+  width: 26%;
   height: @section-sub-height;
-  background-color: #ff7800;
+  background-color: #FF7800;
+}
+
+.yeouido-market .market-title {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.yeouido-market .market-img {
+  position: absolute;
+  right: 30px;
+  bottom: 3px;
+}
+
+.market-img > img {
+  width: 150px;
+  height: 150px;
+}
+
+.market-title > span {
+  font-size: 18px;
 }
 
 .ddp-market {
-  width: 15%;
+  position: relative;
+  width: 16%;
   height: @section-sub-height;
-  background-color: #c997ff;
+  background-color: #7057A3;
+}
+
+.ddp-market .market-img {
+  position: absolute;
+  right: 50px;
+  bottom: 3px;
+}
+
+.ddp-market .market-title {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .cheonggye-market {
-  width: 15%;
+  position: relative;
+  width: 16%;
   height: @section-sub-height;
-  background-color: #AFFF74;
+  background-color: #c3d94e;
+}
+
+.cheonggye-market .market-img {
+  position: absolute;
+  right: 50px;
+  bottom: 3px;
+}
+
+.cheonggye-market .market-title {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .banpo-market {
-  width: 15%;
+  position: relative;
+  width: 16%;
   height: @section-sub-height;
-  background-color: #fff040;
+  background-color: #ffe100;
+}
+
+.banpo-market .market-img {
+  position: absolute;
+  right: 50px;
+  bottom: 3px;
+}
+
+.banpo-market .market-title {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 .cheonggye-square-market {
-  width: 27.5%;
+  position: relative;
+  width: 26%;
   height: @section-sub-height;
   background-color: #5fc1c7;
 }
 
+.cheonggye-square-market .market-img {
+  position: absolute;
+  left: 30px;
+  bottom: 3px;
+}
+
+.cheonggye-square-market .market-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
