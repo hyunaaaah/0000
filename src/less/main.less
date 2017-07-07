@@ -2,21 +2,19 @@
 
 .section-main {
   position: relative;
-  height: 350px;
+  height: 400px;
   padding-top: 20px;
   background-image: url(../img/market2.jpg);
   background-size: cover;
   background-position: 50% 60%;
 }
 
-.main-logo {
-  text-align: center;
-}
-
-.logo {
-  width: 130px;
-  height: 130px;
-  border-radius: 65px;
+.main-logo img {
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  width: 120px;
+  height: 120px;
 }
 
 .main-next-img > li {
@@ -24,166 +22,77 @@
   cursor: pointer;
 }
 
-.main-btn-left {
+.main-btn-left img {
   position: absolute;
+  top: calc(100%/2);
   left: 100px;
-  top: 150px;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  background-color: @font-color;
-  color: @main-color;
-  font-size: 25px;
-  text-align: center;
-  line-height: 30px;
+  width: 25px;
 }
 
-.main-btn-right {
+.main-btn-right img {
   position: absolute;
+  top: calc(100%/2);
   right: 100px;
-  top: 150px;
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  background-color: @font-color;
-  color: @main-color;
-  font-size: 25px;
-  text-align: center;
-  line-height: 30px;
+  width: 25px;
 }
 
 @section-sub-height: 230px;
 .section-sub {
   height: @section-sub-height;
-  width: 100%;
   color: @main-color;
   cursor: pointer;
 }
 
-.section-sub > ul > li {
+.market-menu > li {
   display: inline-block;
-}
-
-.yeouido-market {
-  position: relative;
-  width: 26%;
+  width: calc(100%/7);
   height: @section-sub-height;
-  background-color: #FF7800;
 }
 
-.yeouido-market .market-title {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -2px;
+.none1 {
+  background-color: #ff7800;
 }
 
-.yeouido-market .market-img {
-  position: absolute;
-  right: 30px;
-  bottom: 3px;
-}
-
-.market-img > img {
-  width: 150px;
-  height: 150px;
-}
-
-.market-title > span {
-  font-size: 18px;
+.yyd-market {
+  background-color: #ff7800;
+  background-image: url(../img/home_main_button_yyd.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .ddp-market {
-  position: relative;
-  width: 16%;
-  height: @section-sub-height;
-  background-color: #7057A3;
+  background-color: #7057a3;
+  background-image: url(../img/home_main_button_ddp.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.ddp-market .market-img {
-  position: absolute;
-  right: 50px;
-  bottom: 3px;
-}
-
-.ddp-market .market-title {
-  position: absolute;
-  top: 20px;
-  left: 45px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -2px;
-}
-
-.cheonggye-market {
-  position: relative;
-  width: 16%;
-  height: @section-sub-height;
+.cgc-market {
   background-color: #c3d94e;
+  background-image: url(../img/home_main_button_cgc.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.cheonggye-market .market-img {
-  position: absolute;
-  right: 50px;
-  bottom: 3px;
-}
-
-.cheonggye-market .market-title {
-  position: absolute;
-  top: 20px;
-  left: 45px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -2px;
-}
-
-.banpo-market {
-  position: relative;
-  width: 16%;
-  height: @section-sub-height;
+.bp-market {
   background-color: #ffe100;
+  background-image: url(../img/home_main_button_banpo.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.banpo-market .market-img {
-  position: absolute;
-  right: 50px;
-  bottom: 3px;
-}
-
-.banpo-market .market-title {
-  position: absolute;
-  top: 20px;
-  left: 45px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -2px;
-}
-
-.cheonggye-square-market {
-  position: relative;
-  width: 26%;
-  height: @section-sub-height;
+.cgc-square-market {
   background-color: #5fc1c7;
+  background-image: url(../img/home_main_button_cggj.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.cheonggye-square-market .market-img {
-  position: absolute;
-  left: 30px;
-  bottom: 3px;
-}
-
-.cheonggye-square-market .market-title {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: -2px;
+.none2 {
+  background-color: #5fc1c7;
 }

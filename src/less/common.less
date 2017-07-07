@@ -1,6 +1,6 @@
 @font-color: #ffe42e;
 @main-color: #141E3C;
-@body-min-width: 1000px;
+@body-min-width: 1500px;
 
 body {
   min-width: @body-min-width;
@@ -22,6 +22,7 @@ header {
   left: 0px;
   height: @header-height;
   width: 100%;
+  z-index: 1000;
   background-color: @main-color;
   text-align: center;
   min-width: @body-min-width;
@@ -29,11 +30,11 @@ header {
 
 .header-logo {
   display: inline-block;
-  height: 100%;
   line-height: @header-height;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
+
+  img {
+    width: 150px;
+  }
 }
 
 .header-menu {
@@ -46,7 +47,8 @@ header {
 
 .header-menu > li  {
   display: inline-block;
-  padding: 0px 25px;
+  padding: 0px 30px;
+  cursor: pointer;
 }
 
 .header-sns {
@@ -67,17 +69,18 @@ header {
   line-height: 24px;
 }
 
-@footer-height: 60px;
+@footer-height1: 150px;
+@footer-top-height: 60px;
 
 footer {
+  position: relative;
   width: 100%;
-  height: 150px;
+  height: @footer-height1;
   background-color: #575757;
 }
 
 .footer-top {
-  position: relative;
-  height: @footer-height;
+  height: @footer-top-height;
   background-color: @main-color;
 }
 
@@ -92,11 +95,11 @@ footer {
   display: inline-block;
   padding: 0px 5px;
   vertical-align: top;
-  line-height: @footer-height;
-}
+  line-height: @footer-top-height;
 
-.footer-notice li i {
-  line-height: @footer-height;
+  i {
+    line-height: @footer-top-height;
+  }
 }
 
 .footer-notice .fa {
@@ -112,7 +115,7 @@ footer {
   position: absolute;
   display: inline-block;
   right: 250px;
-  line-height: @footer-height;
+  line-height: @footer-top-height;
 }
 
 .footer-info > li {
@@ -129,8 +132,16 @@ footer {
   font-weight: bold;
 }
 
-.footer-bottom {
+.bottom-info {
+  position: absolute;
+  left: 250px;
+  bottom: 25px;
   color: #ffffff;
   font-size: 12px;
-  margin: 15px 0px 0px 250px;
+}
+
+.bottom-logo {
+  position: absolute;
+  right: 250px;
+  bottom: 25px;
 }
