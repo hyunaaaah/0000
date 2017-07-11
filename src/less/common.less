@@ -38,22 +38,52 @@ header {
 }
 
 .header-menu {
+  position: relative;
   display: inline-block;
-  margin: 0px 20px 0px 40px;
-  font-size: 15px;
+  margin: 0px 30px;
+}
+
+.header-menu > li {
+  display: inline-block;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+
+.header-main-menu > img {
+  height: 15px;
+}
+
+@header-sub-menu-width: 115px;
+
+.header-sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  padding-top: 20px;
+  background-color: @main-color;
+}
+
+.header-sub-menu > li {
+  padding: 5px;
+  width: @header-sub-menu-width;
+  border-bottom: solid 1px @font-color;
   font-weight: bold;
   cursor: pointer;
 }
 
-.header-menu > li  {
-  display: inline-block;
-  padding: 0px 30px;
-  cursor: pointer;
+.header-sub-menu > li:hover {
+  color: @main-color;
+  background-color: @font-color;
+}
+
+.header-sub-menu > li:last-child {
+  border: none;
 }
 
 .header-sns {
   display: inline-block;
-  margin: 0px 20px;
+  vertical-align: middle;
   cursor: pointer;
 }
 .header-sns > li {
@@ -130,6 +160,7 @@ footer {
   color: #ffffff;
   font-size: 13px;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .bottom-info {
