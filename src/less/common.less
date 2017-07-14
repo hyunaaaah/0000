@@ -1,111 +1,129 @@
-@font-color: #ffe42e;
-@main-color: #141E3C;
-@body-min-width: 1500px;
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@font-color: #333;
+@body-min-width: 1400px;
+
+html {
+  height: 100%;
+}
 
 body {
   min-width: @body-min-width;
-  padding-top: @header-height;
+  min-height: 100%;
   color: @font-color;
+  //overflow: hidden;
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
-@header-height: 60px;
+@main-color: #141e3c;
+@font-color: #ffe100;
+@header-height: 70px;
 
 header {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  height: @header-height;
   width: 100%;
-  z-index: 1000;
-  background-color: @main-color;
-  text-align: center;
   min-width: @body-min-width;
+  height: @header-height;
+  background-color: @main-color;
+  color: @font-color;
+  text-align: center;
+  z-index: 1000;
 }
 
 .header-logo {
   display: inline-block;
-  line-height: @header-height;
+  margin-left: 30px;
+}
 
-  img {
-    width: 150px;
-  }
+.header-logo > img {
+  height: 30px;
 }
 
 .header-menu {
-  position: relative;
   display: inline-block;
-  margin: 0px 30px;
+  margin: 0px 50px;
 }
 
 .header-menu > li {
+  position: relative;
   display: inline-block;
-  margin: 0px 30px;
+  margin: 0px 20px;
+  width: 100px;
+  line-height: @header-height;
+  text-align: center;
+}
+
+.header-menu-btn > img {
+  height: 15px;
   cursor: pointer;
 }
 
-.header-main-menu > img {
-  height: 15px;
+.main-logo img {
+  position: fixed;
+  top: @header-height;
+  margin: 20px 47%;
+  width: 120px;
+  height: 120px;
 }
-
-@header-sub-menu-width: 115px;
 
 .header-sub-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 10px;
-  padding-top: 20px;
+  left: 0px;
+  width: 100px;
+  text-align: center;
   background-color: @main-color;
+  line-height: 100%;
 }
 
 .header-sub-menu > li {
-  padding: 5px;
-  width: @header-sub-menu-width;
-  border-bottom: solid 1px @font-color;
-  font-weight: bold;
+  padding: 10px;
+  border-bottom: solid 2px @font-color;
+  font-family: 'Hanna', sans-serif;
+  font-size: 15px;
   cursor: pointer;
 }
 
-.header-sub-menu > li:hover {
-  color: @main-color;
-  background-color: @font-color;
+.header-sub-menu > li:last-child {
+  border-bottom: none;
 }
 
-.header-sub-menu > li:last-child {
-  border: none;
+.header-sub-menu >li:hover {
+  background-color: @font-color;
+  color: @main-color;
 }
 
 .header-sns {
   display: inline-block;
-  vertical-align: middle;
+  margin-right: 30px;
+  color: @main-color;
+  font-size: 15px;
   cursor: pointer;
 }
+
 .header-sns > li {
-  display: inline-block;
-  margin: 0px 5px;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  color: @main-color;
-  font-size: 20px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
   background-color: @font-color;
-  text-align: center;
-  line-height: 24px;
 }
 
-@footer-height1: 150px;
-@footer-top-height: 60px;
+@footer-height: 100px;
+@footer-top-height: 40px;
 
 footer {
   position: relative;
   width: 100%;
-  height: @footer-height1;
+  height: @footer-height;
+  font-family: 'Hanna', sans-serif;
   background-color: #575757;
 }
 
@@ -138,7 +156,7 @@ footer {
 
 .footer-notice > li:nth-child(2) {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .footer-info {
@@ -146,6 +164,7 @@ footer {
   display: inline-block;
   right: 250px;
   line-height: @footer-top-height;
+  letter-spacing: 1px;
 }
 
 .footer-info > li {
@@ -166,13 +185,16 @@ footer {
 .bottom-info {
   position: absolute;
   left: 250px;
-  bottom: 25px;
+  bottom: 5px;
   color: #ffffff;
   font-size: 12px;
 }
 
-.bottom-logo {
+.bottom-logo img {
   position: absolute;
   right: 250px;
-  bottom: 25px;
+  bottom: 20px;
+  width: 100px;
 }
+
+

@@ -2,41 +2,33 @@
 
 .section-main {
   position: relative;
-  height: 400px;
+  height: 500px;
   padding-top: 20px;
-  background-image: url(../img/market2.jpg);
+  background-image: url(../img/market/market4.jpg);
   background-size: cover;
-  background-position: 50% 60%;
+  background-position: 50% 70%;
 }
 
-.main-logo img {
-  position: absolute;
-  top: 20px;
-  left: 45%;
-  width: 120px;
-  height: 120px;
-}
-
-.main-next-img > li {
+.main-img-btn > li {
   display: inline-block;
   cursor: pointer;
 }
 
-.main-btn-left img {
+.prev-img-btn img {
   position: absolute;
-  top: calc(100%/2);
+  top: 60%;
   left: 100px;
   width: 25px;
 }
 
-.main-btn-right img {
+.next-img-btn img {
   position: absolute;
-  top: calc(100%/2);
+  top: 60%;
   right: 100px;
   width: 25px;
 }
 
-@section-sub-height: 230px;
+@section-sub-height: 200px;
 .section-sub {
   height: @section-sub-height;
   color: @main-color;

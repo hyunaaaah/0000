@@ -1,20 +1,27 @@
+var menus = require('./menu/header-menu');
 
-$('.header-menu > li').on('mouseover',function () {
-    var subMenu = $(this).find('.header-sub-menu');
-    var subMenuItemWidth = subMenu.find('li').outerWidth();
-    var subMenuItemMaxCount = 5;
-    var subMenuItemCount = subMenu.find('li').length;
+function initMenu() {
+    var template = require('../template/header-menu.hbs');
 
-    var width = subMenuItemWidth * Math.min(subMenuItemCount, subMenuItemMaxCount);
+    $('.header-menu').empty();
 
-    if ($(this).offset().left + width > $(window).width()) {
-        var subMenuLeft = ($(window).width()) - ($(this).offset().left + width);
-        subMenu.css('left', subMenuLeft);
+    for (var i=0; i<menus.length; i++) {
+        var menuHtml = template(menus[i]);
+
+        $('.header-menu').append(menuHtml);
     }
-    else {
-        subMenu.css('left', 0);
-    }
+}
 
-    subMenu.width(width);
-    subMenu.show();
+initMenu();
+
+$('.header-menu > li').on('mouseover', function () {
+    $(this).find('.header-sub-menu').show();
+});
+
+$('.header-menu > li').on('mouseout', function () {
+    $(this).find('.header-sub-menu').hide();
+});
+
+$('.header-sub-menu > li').on('click', function () {
+    location.href = '../markets.html';
 });
