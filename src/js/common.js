@@ -23,5 +23,7 @@ $('.header-menu > li').on('mouseout', function () {
 });
 
 $('.header-sub-menu > li').on('click', function () {
-    location.href = '../markets.html';
+    var marketId = $(this).attr('market-id');
+
+    location.href = './markets.html?id=' + marketId;
 });

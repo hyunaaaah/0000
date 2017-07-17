@@ -1,6 +1,12 @@
 require('bootstrap');
 require('../less/markets.less');
 
+require('./common');
+
+var URLSearchParams = require('url-search-params');
+var params = new URLSearchParams(location.search);
+var marketId = params.get('id');
+
 //market-sub-menu tab기능 js
 var callback = [];
 
@@ -15,7 +21,7 @@ $('.market-sub-list > li').on('click', function () {
     tabBtns.removeClass('active');
     $(tabBtns[tabIndex]).addClass('active');
 
-    var tabContents = $(this).parents('.market-contents-area').find('.tab-market-introduce');
+    var tabContents = $(this).parents('.market-contents-area').find('.tab-market-introdce');
     tabContents.removeClass('active');
     $(tabContents[tabIndex]).addClass('active');
 
