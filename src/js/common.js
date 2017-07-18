@@ -22,6 +22,10 @@ $('.header-menu > li').on('mouseout', function () {
     $(this).find('.header-sub-menu').hide();
 });
 
+$('.header-logo').on('click', function () {
+    location.href = './';
+});
+
 $('.header-sub-menu > li').on('click', function () {
     var marketId = $(this).attr('market-id');
 
