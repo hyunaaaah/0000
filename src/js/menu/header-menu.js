@@ -1,19 +1,19 @@
 module.exports = [{
     imgName: 'header_nav_menu_introduce.png',
     subMenu: [{
-        id: 'marketIntro',
-        menu:'야시장소개'
+        id: 'marketIntroduce',
+        menu:'야시장개요'
     }, {
         id: 'marketMI',
         menu: 'MI & 캐릭터'
     }, {
-        id: 'marketQNA',
+        id: 'marketQnA',
         menu: '문의하기'
     }]
 }, {
     imgName: 'header_nav_menu_yyd.png',
     subMenu: [{
-        id: 'yydIntro',
+        id: 'yydIntroduce',
         menu:'소개'
     }, {
         id: 'yydMarket',
@@ -34,7 +34,7 @@ module.exports = [{
 },  {
     imgName: 'header_nav_menu_ddp.png',
     subMenu: [{
-        id: 'ddpIntro',
+        id: 'ddpIntroduce',
         menu:'소개'
     }, {
         id: 'ddpMarket',
@@ -55,7 +55,7 @@ module.exports = [{
 }, {
     imgName: 'header_nav_menu_cgc.png',
     subMenu: [{
-        id: 'cgcIntro',
+        id: 'cgcIntroduce',
         menu:'소개'
     }, {
         id: 'cgcMarket',
@@ -76,7 +76,7 @@ module.exports = [{
 }, {
     imgName: 'header_nav_menu_banpo.png',
     subMenu: [{
-        id: 'banpoIntro',
+        id: 'banpoIntroduce',
         menu: '소개'
     }, {
         id: 'banpoMarket',
@@ -97,7 +97,7 @@ module.exports = [{
 }, {
     imgName: 'header_nav_menu_cggj.png',
     subMenu: [{
-        id: 'cggjIntro',
+        id: 'cggjIntroduce',
         menu: '소개'
     }, {
         id: 'cggjMarket',

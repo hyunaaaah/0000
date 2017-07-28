@@ -1,131 +1,81 @@
 @import 'common.less';
 @import 'market-tab';
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
 
 @image-height-size: 350px;
 
-.market-image {
+.market-image, .market-contents-middle {
   height: @image-height-size;
-  background-image: url(../img/market/market2.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-
-.market-headline-area {
+.markets-headline {
   position: relative;
-  height: 180px;
-  background-color: @main-color;
-  text-align: center;
-}
-
-.market-headline {
-  position: absolute;
-  bottom: 0px;
-  left: 36%;
+  height: calc(@image-height-size/2);
+  padding-top: 30px;
   line-height: 50px;
+  font-family: 'Hanna', sans-serif;
+  text-align: center;
+  color: @main-color;
 }
-
-.headline-image1 {
+.headline-img-left {
   position: absolute;
-  bottom: 20px;
-  left: 200px;
-}
+  top: 30px;
+  left: 150px;
 
-.headline-image2 {
+  img {
+    height: 130px;
+  }
+}
+.headline-img-right {
   position: absolute;
-  bottom: 20px;
-  right: 190px;
-}
+  top: 30px;
+  right: 150px;
 
+  img {
+    height: 130px;
+  }
+}
 .market-title {
-  font-size: 45px;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 900;
+  font-size: 35px;
+  font-weight: bold;
   letter-spacing: -2px;
 }
-
-.market-date {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: -1px;
-}
-
-
-//
-
-
-.market-intro, .market-intro2, .market-intro3 {
-  color: #222;
-  text-align: center;
-  font-family: 'Noto Sans KR', sans-serif;
-  letter-spacing: -2px;
-
-  div:first-child {
-    padding-top: 40px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  div:nth-child(2) {
-    padding-top: 20px;
-    font-size: 40px;
-    font-weight: 100;
-  }
-}
-
-.market-intro2 {
-  background-color: @font-color;
-}
-
-.market-intro3 {
+.market-term {
+  font-size: 20px;
   color: @font-color;
-  background-color: @main-color;
 }
-
-.intro-area {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-weight: 100;
-
-  p {
-    font-size: 25px;
-    padding-bottom: 30px;
-  }
+.market-sub-menu > li{
+  display: inline-block;
+  font-size: 20px;
+  padding: 0px 20px;
+  cursor: pointer;
 }
-
-.market-contents-image {
-  height: @image-height-size;
-  background-image: url(../img/market/market_show.jpg);
-  background-position-y: 60%;
-  background-size: cover;
-}
-
 .market-contents {
-  padding-top: 40px;
-  color: #222;
+  padding: 30px 0px;
+  color: @main-color;
   text-align: center;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 100;
-  letter-spacing: -2px;
 }
-
-.contens-title {
-  font-size: 40px;
+.sub-menu-title, .market-construct {
+  padding: 20px 0px;
+  font-size: 30px;
+  font-family: 'Hanna', sans-serif
 }
-
-.contents-area {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 25px;
-
+.sub-menu-contents {
+  font-size: 20px;
   p {
-    padding-bottom: 30px;
+    padding: 10px 0px;
   }
 }
+.market-construct-contents {
+  padding: 30px 0px;
+  color: @main-color;
+  text-align: center;
+  font-size: 20px;
 
-
-
-
+  p {
+    padding: 10px 0px;
+  }
+}

@@ -19,6 +19,7 @@ $('.market-sub-list > li').on('click', function () {
     if (typeof callback[tabIndex] === 'function') {
         callback[tabIndex]();
     }
+
 });
 
 module.exports = {
@@ -26,3 +27,6 @@ module.exports = {
         callback[tabIndex] = handler;
     }
 };
+
+
+

@@ -2,7 +2,6 @@ var menus = require('./menu/header-menu');
 
 function initMenu() {
     var template = require('../template/header-menu.hbs');
-
     $('.header-menu').empty();
 
     for (var i=0; i<menus.length; i++) {
