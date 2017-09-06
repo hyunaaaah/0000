@@ -1,5 +1,4 @@
 @import 'common.less';
-@import 'market-carousel.less';
 
 .section-main {
   position: relative;
@@ -9,23 +8,18 @@
   background-position: 50% 60%;
 }
 
-.market-carousel {
-  position: relative;
-
-  .market-carousel-arrow.left img {
-    position: absolute;
-    top: 250px;
-    left: 30px;
-    width: 30px;
-  }
-
-  .market-carousel-arrow.right img {
-    position: absolute;
-    top: 250px;
-    right: 30px;
-    width: 30px;
-  }
+//carousel
+#right-button, #left-button {
+  position: absolute;
+  top: 250px;
+  width: 30px;
 }
+
+.carousel-inner .item img {
+  width: 100%;
+  height: 500px;
+}
+//carousel
 
 .language-btn {
   position: absolute;

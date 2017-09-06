@@ -1,13 +1,12 @@
 module.exports = [{
     backgroundColor: '#ff7800',
-    name: '@여의도 월드나이트 마켓',
-    term: '매주 금/토 18:00 ~ 23:00',
+    titleImage: 'market/yyd/sub_yyd_title.png',
+    term: 'market/yyd/sub_yyd_title_info.png',
     leftImage: '../../img/market/yyd/yyd_top_symbol_1.png',
     rightImage: '../../img/market/yyd/yyd_top_symbol_2.png',
-    subMenu: [],
     title: '@여의도 개요',
     summary: '<p>\n' +
-    '            한강의 야경과 함꼐하는 하룻밤의 세계여행<br>\n' +
+    '            한강의 야경과 함께하는 하룻밤의 세계여행<br>\n' +
     '            월드나이트마켓\n' +
     '        </p>\n' +
     '        <p>\n' +

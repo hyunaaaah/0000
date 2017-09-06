@@ -1,22 +1,23 @@
 @import 'common.less';
 @import 'market-tab';
 
-@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
 
 @image-height-size: 350px;
 
+//headline
 .market-image, .market-contents-middle {
   height: @image-height-size;
   background-size: cover;
   background-position: 50% 50%;
 }
+
 .markets-headline {
   position: relative;
   height: calc(@image-height-size/2);
-  padding-top: 30px;
+  padding-top: 20px;
   line-height: 50px;
-  font-family: 'Hanna', sans-serif;
   text-align: center;
   color: @main-color;
 }
@@ -38,35 +39,64 @@
     height: 130px;
   }
 }
-.market-title {
-  font-size: 35px;
-  font-weight: bold;
-  letter-spacing: -2px;
+
+.market-title img {
+  height: 35px;
 }
-.market-term {
-  font-size: 20px;
-  color: @font-color;
+.market-term img {
+  height: 25px;
 }
-.market-sub-menu > li{
+
+.market-sub-menu > li {
   display: inline-block;
-  font-size: 20px;
-  padding: 0px 20px;
+  padding: 0px 25px;
   cursor: pointer;
+
+  img {
+    height: 15px;
+  }
+
+  &.active {
+    border-bottom: solid 5px @main-color;
+
+    &:hover {
+      padding-bottom: 0px;
+      border-bottom: solid 5px @main-color;
+    }
+  }
+
+  &:hover {
+    padding-bottom: 3px;
+    border-bottom: solid 2px @main-color;
+  }
 }
+//headline
+
+//contents
 .market-contents {
-  padding: 30px 0px;
   color: @main-color;
   text-align: center;
 }
+
+.market-contents-top, .market-contents-bottom {
+  padding: 30px 0px 50px 0px;
+}
+
 .sub-menu-title, .market-construct {
   padding: 20px 0px;
-  font-size: 30px;
-  font-family: 'Hanna', sans-serif
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Jeju Gothic', sans-serif
 }
+
 .sub-menu-contents {
   font-size: 20px;
   p {
     padding: 10px 0px;
+
+    &:first-child {
+      font-size: 35px;
+    }
   }
 }
 .market-construct-contents {
@@ -77,6 +107,10 @@
 
   p {
     padding: 10px 0px;
+
+    &:first-child {
+      font-size: 35px;
+    }
   }
 }
 
@@ -123,7 +157,7 @@
 }
 
 .concert-schedule-detail thead tr th:last-child,
-  .concert-schedule-detail tbody tr td:last-child {
+.concert-schedule-detail tbody tr td:last-child {
   border-right: none;
 }
 

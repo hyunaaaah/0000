@@ -25,7 +25,6 @@ function initHeadline() {
     }
 
 }
-
 initHeadline();
 
 function initContents() {
@@ -49,8 +48,8 @@ function initContents() {
             }
             break;
         case 'yydMarket':
-        //case 'ddpMarket':
-      //  case 'cgcMarket':
+            //case 'ddpMarket':
+            //  case 'cgcMarket':
 
             var template = require('../template/markets/market-food.hbs');
             $('.market-contents').empty();

@@ -22,7 +22,8 @@ module.exports = [{
     '        </p>',
     marketImage: './img/market/ddp/ddp_market.jpg',
     constructTitle: '@DDP 구성',
-    constructContents: '<p>\n' +
+    constructContents: '<p>서울의 랜드마크에서 즐기는<br>음악과 패션, 맛있는 음식</p>' +
+        '<p>\n' +
     '        팔거리청춘의 밤을 여는 곳<br>\n' +
     '        종합 안내소 겸 상황실입니다. 운영본부와 의료부스가 준비되어 있습니다. 위급 상황 시 이곳을 찾아주세요.\n' +
     '    </p>\n' +
