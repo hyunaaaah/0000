@@ -8,9 +8,18 @@
 <section class="market-contents-bottom">
     <div class="market-construct">{{{constructTitle}}}</div>
     <div class="market-construct-contents">
-        {{{constructContents}}}
+        <p>
+            {{{topic}}}
+        </p>
+        {{#each contents}}
+            <p>
+                <span class="pointword">{{pointWord}}</span>
+                <span>{{mainSubject}}</span><br>
+                {{{content}}}
+            </p>
+        {{/each}}
     </div>
-    <div>
+    <div class="market-map">
         <img src="{{map}}" style="height: 300px">
     </div>
 </section>
