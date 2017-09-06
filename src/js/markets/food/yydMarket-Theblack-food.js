@@ -1,7 +1,4 @@
 module.exports = {
-
-    foodImage:  '<p>' +
-                '<img src="../../img/market/yyd/food/Theblack.jpg">' +
-                '</p>',
-    foodStore: '오프로'
+    foodImage: '../../img/market/yyd/food/Theblack.jpg',
+    foodStore: '더블랙'
 };

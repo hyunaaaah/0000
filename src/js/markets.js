@@ -13,18 +13,20 @@ var introContents = require('./markets/' + marketId);
 
 $('.markets-headline').css('background-color', introContents[0].backgroundColor );
 
-function initheadline() {
-    var headlineTemplate = require('../template/markets/headline.hbs');
+function initHeadline() {
     $('.markets-headline').empty();
 
-    for (var i = 0; i < introContents.length; i++) {
-        var headlneHtml = headlineTemplate(introContents[i]);
+    var headlineTemplate = require('../template/markets/headline.hbs');
 
-        $('.markets-headline').append(headlneHtml);
+    for (var i = 0; i < introContents.length; i++) {
+        var headlineHtml = headlineTemplate(introContents[i]);
+
+        $('.markets-headline').append(headlineHtml);
     }
+
 }
 
-initheadline();
+initHeadline();
 
 function initContents() {
     switch (marketId) {
@@ -36,6 +38,7 @@ function initContents() {
         case 'cggjIntroduce':
         case 'marketMI':
         case 'marketQnA':
+
             var template = require('../template/markets/introduce.hbs');
             $('.market-contents').empty();
 
@@ -48,15 +51,35 @@ function initContents() {
         case 'yydMarket':
         //case 'ddpMarket':
       //  case 'cgcMarket':
-            var foods = require('./markets/' + marketId);
+
             var template = require('../template/markets/market-food.hbs');
             $('.market-contents').empty();
 
-            for (var i = 0; i < foods.length; i++) {
-                var contentsHtml = template(foods[i]);
+            for (var i = 0; i < introContents.length; i++) {
+                var contentsHtml = template(introContents[i]);
 
                 $('.market-contents').append(contentsHtml);
+
             }
+            break;
+
+        case 'yydConcert':
+        case 'ddpConcert':
+        case 'banpoConcert':
+            var template = require('../template/markets/market-concert.hbs');
+
+            $('.market-contents').empty();
+
+            for (var i = 0; i < introContents.length; i++) {
+                var contentsHtml = template(introContents[i]);
+
+                $('.market-contents').append(contentsHtml);
+
+            }
+            break;
+
+        case 'cggjConcert':
+            alert('준비중입니다.');
             break;
     }
 }

@@ -79,3 +79,76 @@
     padding: 10px 0px;
   }
 }
+
+.food-contents {
+  display: inline-block;
+  padding: 15px;
+}
+
+.food-contents > li > div{
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.concert-month-schedule {
+  margin-left: 50px;
+  margin-bottom: 30px;
+  width: 1500px;
+  font-size: 30px;
+  border-top: solid 5px @main-color;
+  border-bottom: solid 5px @main-color;
+}
+
+.concert-month-schedule thead tr th {
+  padding: 10px 50px;
+}
+
+.concert-schedule-detail {
+  margin-left: 50px;
+  margin-bottom: 30px;
+  width: 1500px;
+  border-top: solid 5px @main-color;
+  border-bottom: solid 5px @main-color;
+}
+
+.concert-schedule-detail thead tr th{
+  border-bottom: solid 1px rgba(20, 30, 60, 0.1);
+  border-right: solid 1px rgba(20, 30, 60, 0.1);
+}
+
+.concert-schedule-detail tbody tr td {
+  border-bottom: solid 1px rgba(20, 30, 60, 0.1);
+  border-right: solid 1px rgba(20, 30, 60, 0.1);
+}
+
+.concert-schedule-detail thead tr th:last-child,
+  .concert-schedule-detail tbody tr td:last-child {
+  border-right: none;
+}
+
+.concert-schedule-detail thead tr th, tbody tr td {
+  width: calc(1500px/9);
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.concert-date {
+  margin-top: 20px;
+  font-size: 20px;
+  color: @main-color;
+  font-weight: bold;
+  font-family: 'Hanna', sans-serif;
+}
+
+.artist-list > li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-family: 'Hanna', sans-serif;
+  font-size: 18px;
+
+  img {
+    width: 400px;
+  }
+}

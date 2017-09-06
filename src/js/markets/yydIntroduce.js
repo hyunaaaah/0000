@@ -4,7 +4,7 @@ module.exports = [{
     term: '매주 금/토 18:00 ~ 23:00',
     leftImage: '../../img/market/yyd/yyd_top_symbol_1.png',
     rightImage: '../../img/market/yyd/yyd_top_symbol_2.png',
-    subMenu: '',
+    subMenu: [],
     title: '@여의도 개요',
     summary: '<p>\n' +
     '            한강의 야경과 함꼐하는 하룻밤의 세계여행<br>\n' +
