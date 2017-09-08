@@ -1,5 +1,6 @@
 require('bootstrap');
 require('../less/markets.less');
+require('../less/market-intro.less');
 require('../less/common.less');
 
 require('./common');
@@ -9,9 +10,10 @@ var URLSearchParams = require('url-search-params');
 var params = new URLSearchParams(location.search);
 var marketId = params.get('id');
 
-var introContents = require('./markets/' + marketId);
+var introContents = require('./markets/introduce/' + marketId);
 
 $('.markets-headline').css('background-color', introContents[0].backgroundColor );
+$('.market-image').css('background-image', 'url(' + introContents[0].backgroundImage +')');
 
 function initHeadline() {
     $('.markets-headline').empty();
@@ -30,13 +32,13 @@ initHeadline();
 function initContents() {
     switch (marketId) {
         case 'marketIntroduce':
+        case 'marketMI':
+        case 'marketQnA':
         case 'yydIntroduce':
         case 'ddpIntroduce':
         case 'cgcIntroduce':
         case 'banpoIntroduce':
         case 'cggjIntroduce':
-        case 'marketMI':
-        case 'marketQnA':
 
             var template = require('../template/markets/introduce.hbs');
             $('.market-contents').empty();
@@ -45,6 +47,12 @@ function initContents() {
                 var contentsHtml = template(introContents[i]);
 
                 $('.market-contents').append(contentsHtml);
+            }
+
+            if (marketId === 'marketMI' || 'marketQnA') {
+                var contents = require('../template/markets/marketMI.hbs');
+                $('.market-contents').empty();
+                $('.market-contents').append(contents);
             }
 
             break;

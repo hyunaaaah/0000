@@ -1,5 +1,6 @@
 module.exports = [{
     backgroundColor: '#5fc1c7',
+    backgroundImage: './img/market/cggj/sub_cggj_title_image.JPG',
     color: 'navy',
     titleImage: '../../img/market/cggj/sub_cggj_title.png',
     term: '../../img/market/cggj/sub_cggj_title_info.png',
