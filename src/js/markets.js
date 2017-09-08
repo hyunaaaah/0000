@@ -31,9 +31,20 @@ initHeadline();
 
 function initContents() {
     switch (marketId) {
-        case 'marketIntroduce':
         case 'marketMI':
         case 'marketQnA':
+                var MIcontents = require('../template/markets/marketMI.hbs');
+                var charContents = require('../template/markets/marketQnA.hbs');
+
+                $('.market-contents').empty();
+                if (marketId === 'marketMI') {
+                    $('.market-contents').append(MIcontents);
+                }
+                else {
+                    $('.market-contents').append(charContents);
+                }
+            break;
+        case 'marketIntroduce':
         case 'yydIntroduce':
         case 'ddpIntroduce':
         case 'cgcIntroduce':
@@ -47,12 +58,6 @@ function initContents() {
                 var contentsHtml = template(introContents[i]);
 
                 $('.market-contents').append(contentsHtml);
-            }
-
-            if (marketId === 'marketMI' || 'marketQnA') {
-                var contents = require('../template/markets/marketMI.hbs');
-                $('.market-contents').empty();
-                $('.market-contents').append(contents);
             }
 
             break;
