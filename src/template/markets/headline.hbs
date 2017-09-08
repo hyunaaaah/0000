@@ -1,16 +1,14 @@
 <div class="market-title">
-    <img src="../../img/{{titleImage}}">
+    <img src="{{titleImage}}">
 </div>
 <div class="market-term">
-    <img src="../../img/{{term}}">
+    <img src="{{term}}">
 </div>
-<ul class="market-sub-menu">
-    <li class="active"><img src="../../img/menu_navy/sub_top_menu_intorduce.png"></li>
-    <li><img src="../../img/menu_navy/sub_top_menu_market_intorduce.png"></li>
-    <li><img src="../../img/menu_navy/sub_top_menu_busking_info.png"></li>
-    <li><img src="../../img/menu_navy/sub_top_menu_field_sketch.png"></li>
-    <li><img src="../../img/menu_navy/sub_top_menu_notice.png"></li>
-    <li><img src="../../img/menu_navy/sub_top_menu_map.png"></li>
+<ul class="market-sub-menu {{color}}">
+    <li class="active"><img src="{{selectMenu}}"></li>
+    {{#each subMenus}}
+        <li><img src="{{submenu}}"></li>
+    {{/each}}
 </ul>
 <div class="headline-img-left"><img src="{{leftImage}}"></div>
 <div class="headline-img-right"><img src="{{rightImage}}"></div>

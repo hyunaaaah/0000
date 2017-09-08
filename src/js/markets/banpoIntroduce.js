@@ -1,10 +1,22 @@
 module.exports = [{
     backgroundColor: '#ffe100',
-    name: '@반포 낭만달빛마켓',
-    term: '매주 금/토 18:00 ~ 23:00',
+    color: 'navy',
+    titleImage: '../../img/market/banpo/sub_banpo_title.png',
+    term: '../../img/market/banpo/sub_banpo_title_info.png',
+    selectMenu: '../../img/menu_navy/sub_top_menu_intorduce.png',
+    subMenus: [{
+        submenu: '../../img/menu_navy/sub_top_menu_market_intorduce.png'
+    }, {
+        submenu: '../../img/menu_navy/sub_top_menu_busking_info.png'
+    }, {
+        submenu: '../../img/menu_navy/sub_top_menu_field_sketch.png'
+    }, {
+        submenu: '../../img/menu_navy/sub_top_menu_notice.png'
+    }, {
+        submenu: '../../img/menu_navy/sub_top_menu_map.png'
+    }],
     leftImage: '../../img/market/banpo/banpo_top_symbol_1.png',
     rightImage: '../../img/market/banpo/banpo_top_symbol_2.png',
-    subMenu: '',
     title: '@반포 개요',
     summary: '<p>\n' +
     '            야경과 분수, 빛과 음악이 있는<br>\n' +
@@ -21,32 +33,28 @@ module.exports = [{
     '            서울의 낭만을 즐겨보세요!\n' +
     '        </p>',
     marketImage: './img/market/banpo/banpo_market.jpg',
-    constructTitle: '@청계천 구성',
-    constructContents: '<p>\n' +
-    '        밤마다 열리는 시간의 문,<br>\n' +
-    '        소원을 들어주는 도깨비를 만나다\n' +
-    '    </p>\n' +
-    '    <p>\n' +
-    '            운영존 놀기 좋아하는 밤도깨비들아! 여기 여기 붙어라!<br>\n' +
-    '            도깨비 원정대를 위한 종합 안내소 겸 상황실입니다.<br>\n' +
-    '            운영본부와 의료지원 부스가 마련되어 있으니<br>\n' +
-    '            궁금한 점이 있거나 비상 및 응급 상황 발생 시 언제든 찾아주세요.\n' +
-    '    </p>\n' +
-    '    <p>\n' +
-    '        푸드트럭존도깨비 잔치에는 맛있는 음식이 풍성!<br>\n' +
-    '        천 리 길도 한 걸음부터!<br>\n' +
-    '        원정길을 든든히 지켜줄 밤도깨비 푸드트럭에서 씹고, 뜯고, 맛보고, 즐기세요!\n' +
-    '    </p>\n' +
-    '    <p>\n' +
-    '        이벤트존흥 넘치는 도깨비들이 준비한 이벤트가 한가득!<br>\n' +
-    '        도깨비야! 내 소원을 들어줘! <소원편지>,<br>\n' +
-    '        내 방망이 어디 갔어? 아슬아슬 <보틀플립>,<br>\n' +
-    '        다 같이 돌자~ 마켓 한 바퀴. 도깨비와 함께하는 <퍼레이드>가 당신을 기다립니다!\n' +
-    '    </p>\n' +
-    '    <p>\n' +
-    '        휴식존도깨비와 함께 쉬어 가자!<br>\n' +
-    '        청계천의 근사한 풍경과 함께 푸드트럭 음식을 맛보면 즐거움이 두 배!<br>\n' +
-    '        밤에 더 빛나는 청계천을 즐기세요.\n' +
-    '    </p>\n',
+    constructTitle: '@반포 구성',
+    topic: '아름다운 무지개분수와 함께 즐기는<br>낭만적인 밤 피크닉',
+    contents: [{
+        pointWord: '인포센터',
+        mainSubject: '오늘 밤의 낭만이 시작되는 곳',
+        content: '종합 안내소 겸 상황실입니다. 운영본부와 의료지원 부스가 마련되어 있으니<br>\n' +
+        '            궁금한 점이 있거나 비상 및 응급 상황 발생 시 인포센터를 찾아주세요.'
+    }, {
+        pointWord: '푸드존',
+        mainSubject: '한강에서 즐기는 로맨틱한 저녁 식사',
+        content: '한강과 가장 가까운 특별한 식당.<br>\n' +
+        '         전 세계 음식을 맛볼 수 있는 푸드존에서 낭만적인 저녁 식사를 즐겨보세요.'
+    },  {
+        pointWord: '셀러존',
+        mainSubject: '나만을 위한 특별한 작품',
+        content: '다양한 분야의 핸드메이드 작가들이 반짝이는 아이디어와 솜씨로 여러분을 위한<br>\n' +
+        '         세상에 단 하나뿐인 작품을 준비했습니다. 야시장의 감동을 영원히 간직하세요.'
+    },  {
+        pointWord: '퍼포먼스존',
+        mainSubject: '사랑하는 사람과 함께하는 낭만적인 공연',
+        content: '반짝이는 야경과 낭만적인 공연을 사랑하는 사람과 함게 즐기세요.<br>\n' +
+        '         로맨틱한 어쿠스틱 공연과 재즈, 팝페라 공연 등이 진행됩니다.'
+    }],
     map: './img/market/banpo/sub_banpo_bottom_image.jpg'
 }];

@@ -47,7 +47,7 @@
   height: 25px;
 }
 
-.market-sub-menu > li {
+.market-sub-menu.navy > li {
   display: inline-block;
   padding: 0px 25px;
   cursor: pointer;
@@ -68,6 +68,30 @@
   &:hover {
     padding-bottom: 3px;
     border-bottom: solid 2px @main-color;
+  }
+}
+
+.market-sub-menu.yellow > li {
+  display: inline-block;
+  padding: 0px 25px;
+  cursor: pointer;
+
+  img {
+    height: 15px;
+  }
+
+  &.active {
+    border-bottom: solid 5px @font-color;
+
+    &:hover {
+      padding-bottom: 0px;
+      border-bottom: solid 5px @font-color;
+    }
+  }
+
+  &:hover {
+    padding-bottom: 3px;
+    border-bottom: solid 2px @font-color;
   }
 }
 //headline

@@ -46,6 +46,7 @@ function initContents() {
 
                 $('.market-contents').append(contentsHtml);
             }
+
             break;
         case 'yydMarket':
             //case 'ddpMarket':
