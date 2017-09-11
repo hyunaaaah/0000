@@ -16,6 +16,9 @@ const pages = [{
 }, {
     html: 'markets',
     script: 'markets'
+}, {
+    html: 'sketches',
+    script: 'sketches'
 }];
 
 module.exports = {

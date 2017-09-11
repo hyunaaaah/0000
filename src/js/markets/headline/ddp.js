@@ -1,9 +1,9 @@
 module.exports = [{
-    backgroundColor: '#141E3C',
-    backgroundImage: './img/sub_nmi_title_image.jpg',
+    backgroundColor: '#7057a3',
+    backgroundImage: './img/market/ddp/sub_ddp_title_image.jpg',
     color: 'yellow',
-    titleImage: '../../img/sub_nmi_title.png',
-    term: '../../img/sub_nmi_title_info.png',
+    titleImage: '../../img/market/ddp/sub_ddp_title.png',
+    term: '../../img/market/ddp/sub_ddp_title_info.png',
     selectMenu: '../../img/menu_yellow/sub_top_menu_intorduce_yellow.png',
     subMenus: [{
         submenu: '../../img/menu_yellow/sub_top_menu_market_intorduce_yellow.png'
@@ -16,6 +16,6 @@ module.exports = [{
     }, {
         submenu: '../../img/menu_yellow/sub_top_menu_map_yellow.png'
     }],
-    leftImage: '../../img/nmi_top_symbol_1.png',
-    rightImage: '../../img/nmi_top_symbol_2.png'
+    leftImage: '../../img/market/ddp/ddp_top_symbol_1.png',
+    rightImage: '../../img/market/ddp/ddp_top_symbol_2.png'
 }];
