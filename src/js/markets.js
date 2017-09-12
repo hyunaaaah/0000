@@ -60,10 +60,29 @@ function initContents() {
 
                 $('.market-contents').append(contentsHtml);
             }
-
-            console.log(mapContents);
-
             break;
+
+        case 'yydNotice':
+        case 'ddpNotice':
+        case 'cgcNotice':
+        case 'cggjNotice':
+        case 'banpoNotice':
+            /*
+            var noticeContents = require('./markets/notice/' + marketId);
+
+            var template = require('../template/markets/map.hbs');
+            $('.market-contents').empty();
+
+            for (var i = 0; i < noticeContents.length; i++) {
+                var contentsHtml = template(noticeContents[i]);
+
+                $('.market-contents').append(contentsHtml);
+            }
+            */
+            var template = require('../template/markets/notice.hbs');
+            $('.market-contents').append(template);
+            break;
+
     }
 }
 initContents();
