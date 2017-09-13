@@ -79,7 +79,18 @@ function initContents() {
                 $('.market-contents').append(contentsHtml);
             }
             */
+
+
             var template = require('../template/markets/notice.hbs');
+            $('.market-contents').append(template);
+            break;
+        case 'yydSketch':
+        case 'ddpSketch':
+        case 'cgcSketch':
+        case 'banpoSketch':
+        case 'cggjSketch':
+
+            var template = require('../template/markets/sketch.hbs');
             $('.market-contents').append(template);
             break;
 
