@@ -45,6 +45,16 @@ function initContents() {
 
             break;
 
+        case 'yydMarket':
+        case 'ddpMarket':
+        case 'cgcMarket':
+        case 'banpoMarket':
+        case 'cggjMarket':
+
+            var template = require('../template/markets/marketDetail.hbs');
+            $('.market-contents').append(template);
+            break;
+
         case 'yydMap':
         case 'ddpMap':
         case 'cgcMap':
@@ -67,6 +77,7 @@ function initContents() {
         case 'cgcNotice':
         case 'cggjNotice':
         case 'banpoNotice':
+        case 'marketNotice':
             /*
             var noticeContents = require('./markets/notice/' + marketId);
 
@@ -89,11 +100,30 @@ function initContents() {
         case 'cgcSketch':
         case 'banpoSketch':
         case 'cggjSketch':
+        case 'marketSketch':
 
             var template = require('../template/markets/sketch.hbs');
             $('.market-contents').append(template);
             break;
 
+        case 'yydConcert':
+        case 'ddpConcert':
+        case 'cgcConcert':
+        case 'banpoConcert':
+        case 'cggjConcert':
+
+            var template = require('../template/markets/concert.hbs');
+            $('.market-contents').append(template);
+            break;
+
+        case 'marketPress':
+            var template = require('../template/markets/marketPress.hbs');
+            $('.market-contents').append(template);
+            break;
+        case 'marketMedia':
+            var template = require('../template/markets/marketMedia.hbs');
+            $('.market-contents').append(template);
+            break;
     }
 }
 initContents();

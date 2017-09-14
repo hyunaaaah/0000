@@ -129,9 +129,24 @@ function initHeadline() {
             }
             break;
 
+        case 'marketNotice':
+        case 'marketSketch':
+        case 'marketPress':
+        case 'marketMedia':
+            var headlineContents = require('./markets/headline/marketNews');
+
+            $('.markets-headline').css('background-color', headlineContents[0].backgroundColor );
+            $('.market-image').css('background-image', 'url(' + headlineContents[0].backgroundImage +')');
 
 
+            var headlineTemplate = require('../template/markets/headline.hbs');
 
+            for (var i = 0; i < headlineContents.length; i++) {
+                var headlineHtml = headlineTemplate(headlineContents[i]);
+
+                $('.markets-headline').append(headlineHtml);
+            }
+            break;
     }
 
 
