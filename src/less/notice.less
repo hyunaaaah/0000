@@ -12,19 +12,17 @@
 }
 
 .notice-list tr td {
-  border: solid 2px #c7c7c7;
-  font-weight: bold;
+  border-top: solid 1px #c7c7c7;
+  border-left: solid 1px #c7c7c7;
+  border-bottom: solid 1px #c7c7c7;
+  cursor: pointer;
+}
+
+.notice-list tr td.active {
+  border: solid 1px @main-color;
   font-size: 18px;
-  color: #c7c7c7;
-}
-
-.notice-list tr td:first-child {
-  border-right: solid 2px @main-color;
-}
-
-#active {
-  color: @main-color;
-  border: solid 2px @main-color;
+  font-weight: bold;
+  font-family: 'Jeju Gothic', sans-serif;
 }
 
 .notice-contents {
@@ -62,12 +60,10 @@
 }
 
 .sketch-list tr td {
-  border: solid 1px #c7c7c7;
+  border-top: solid 1px #c7c7c7;
+  border-left: solid 1px #c7c7c7;
+  border-bottom: solid 1px #c7c7c7;
   cursor: pointer;
-
-  &:first-child {
-    border-right: solid 1px @main-color;
-  }
 }
 
 .sketch-list tr td.active {

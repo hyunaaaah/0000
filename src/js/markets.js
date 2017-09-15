@@ -91,9 +91,22 @@ function initContents() {
             }
             */
 
-
             var template = require('../template/markets/notice.hbs');
             $('.market-contents').append(template);
+
+            $('.notice-list tr td').on('click', function () {
+                if ($(this).hasClass('active')) {
+                    return;
+                }
+                else {
+                    var tabIndex = $(this).index();
+
+                    var tabBtns = $(this).parent('.notice-list tr').find('td');
+                    tabBtns.removeClass('active');
+                    $(tabBtns[tabIndex]).addClass('active');
+                }
+            });
+
             break;
         case 'yydSketch':
         case 'ddpSketch':
@@ -105,7 +118,18 @@ function initContents() {
             var template = require('../template/markets/sketch.hbs');
             $('.market-contents').append(template);
 
+            $('.sketch-list tr td').on('click', function () {
+               if ($(this).hasClass('active')) {
+                   return;
+               }
+               else {
+                   var tabIndex = $(this).index();
 
+                   var tabBtns = $(this).parent('.sketch-list tr').find('td');
+                   tabBtns.removeClass('active');
+                   $(tabBtns[tabIndex]).addClass('active');
+               }
+            });
 
             break;
 
