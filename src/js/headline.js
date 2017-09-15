@@ -164,4 +164,8 @@ $('.market-sub-menu > li ').on('click', function () {
     tabBtns.removeClass('active');
     $(tabBtns[tabIndex]).addClass('active');
 
+    var tabContents = $(this).parents('body').find('.market-contents');
+   // tabContents.removeClass('active');
+   // $(tabContents[tabIndex]).addClass('active');
+
 });
