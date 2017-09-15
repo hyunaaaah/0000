@@ -104,6 +104,9 @@ function initContents() {
 
             var template = require('../template/markets/sketch.hbs');
             $('.market-contents').append(template);
+
+
+
             break;
 
         case 'yydConcert':

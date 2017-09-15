@@ -152,3 +152,16 @@ function initHeadline() {
 
 }
 initHeadline();
+
+$('.market-sub-menu > li ').on('click', function () {
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    var tabIndex = $(this).index();
+
+    var tabBtns = $(this).parent('.market-sub-menu').find('li');
+    tabBtns.removeClass('active');
+    $(tabBtns[tabIndex]).addClass('active');
+
+});

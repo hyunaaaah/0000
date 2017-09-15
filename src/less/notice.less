@@ -62,14 +62,19 @@
 }
 
 .sketch-list tr td {
-  border: solid 2px #c7c7c7;
-  font-weight: bold;
-  font-size: 18px;
-  color: #c7c7c7;
+  border: solid 1px #c7c7c7;
+  cursor: pointer;
+
+  &:first-child {
+    border-right: solid 1px @main-color;
+  }
 }
 
-.sketch-list tr td:first-child {
-  border-right: solid 2px @main-color;
+.sketch-list tr td.active {
+  border: solid 1px @main-color;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Jeju Gothic', sans-serif;
 }
 
 .sketch-contents {
