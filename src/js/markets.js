@@ -128,6 +128,27 @@ function initContents() {
                    var tabBtns = $(this).parent('.sketch-list tr').find('td');
                    tabBtns.removeClass('active');
                    $(tabBtns[tabIndex]).addClass('active');
+
+                   var ID = $(tabBtns[tabIndex]).attr('id');
+
+                   if ( ID === 'bamMarkets') {
+                       location.href = './markets.html?id=marketSketch';
+                   }
+                   else if ( ID === 'bamYyd') {
+                       location.href = './markets.html?id=yydSketch';
+                   }
+                   else if ( ID === 'bamDDP') {
+                       location.href = './markets.html?id=ddpSketch';
+                   }
+                   else if ( ID === 'bamCgc') {
+                       location.href = './markets.html?id=cgcSketch';
+                   }
+                   else if ( ID === 'bamBanpo') {
+                       location.href = './markets.html?id=banpoSketch';
+                   }
+                   else if ( ID === 'bamCgcj') {
+                       location.href = './markets.html?id=cggjSketch';
+                   }
                }
             });
 
